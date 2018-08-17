@@ -1,0 +1,133 @@
+.btn-primary{
+	min-width: 100px;
+}
+.table-hover input{
+	width:100px
+}
+	.spinner {
+  width: 100px;
+}
+.spinner input {
+  text-align: right;
+}
+.input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.input-group-btn-vertical > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+}
+.input-group-btn-vertical > .btn:first-child {
+  border-top-right-radius: 4px;
+}
+.input-group-btn-vertical > .btn:last-child {
+  margin-top: -2px;
+  border-bottom-right-radius: 4px;
+}
+.input-group-btn-vertical i{
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+.form-group:first-child{
+	margin-top:20px;
+}
+.pagination li a.active{
+	background: #eee;
+}
+.example-modal .modal {
+      position: relative;
+      top: auto;
+      bottom: auto;
+      right: auto;
+      left: auto;
+      display: block;
+      z-index: 1;
+    }
+
+    .example-modal .modal {
+      background: transparent !important;
+    }
+    .font-success{
+    	color: #00a65a;
+    }
+    .font-1{
+    	padding-left:12px
+    }
+    .font-danger{
+    	color: red;
+    }
+ .modal-body ul{
+ 	list-style: none;
+ 	margin: 0;
+ 	padding: 0;
+ }
+ .modal-body ul li{
+ 	line-height: 33px;
+ }
+ .modal-header .fa-paper-plane,.modal-header .fa-bell{
+ 	padding-right:15px;
+ 	color:#4976b1;
+ }
+.input-search{
+	width:150px;
+	margin: 15px 8px 15px;
+}
+.pagination-right{
+	text-align: right;
+}
+.total-tr{
+	background: #eee;
+}
+.table tbody th:first-child,.table tbody th:last-child,.table tbody td:first-child,.table tbody td:last-child{
+	border-left: none;
+}
+.table-responsive{
+	border: none;
+}
+
+.error {
+	color: red;
+}
+.success{
+	color: #24aadf;
+}
+.label-error{
+	display: none;
+}
+.error-inline{
+	display: inline-block;
+	padding: 10px 0 0 0;
+}
+
+.form-horizontal .control-label{
+	width: 120px;
+}
+.list-inline{
+	display: inline-block;
+	padding: 10px;
+}
+.col-sm-4.border-right{
+	 
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.logo-img{
+	width: 120px;
+}
+.sidebar-collapse .main-header .logo{
+	padding: 0 8px;
+}
+.nav-tabs-custom > .tab-content{
+	padding: 10px 0;
+}

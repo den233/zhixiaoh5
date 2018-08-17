@@ -1,0 +1,12 @@
+.login-page, .register-page{
+	background: url('../img/snow.jpg');
+	background-size:100% 100% ;
+}
+.login-box-body{
+	background: url('../img/xxx-04.png');
+	background-size:100% 100% ;
+	padding-bottom: 35px;
+}
+.login-box-msg{
+	color: #fff;
+}

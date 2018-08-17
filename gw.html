@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>直销系统</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+ <link rel="stylesheet" href="dist/css/AdminLTE.css">
+   <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="./plugins/iCheck/all.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
+  <!-- Morris chart -->
+    <link rel="stylesheet" href="dist/css/bootstrap-spinner.css">
+   <link rel="stylesheet" href="dist/css/theme.css" />
+  <link rel="stylesheet" href="dist/css/theme.css" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+ 
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <img class='logo-img' src="./dist/img/logo2.png" alt="" /> 
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+           
+          <!-- Notifications: style can be found in dropdown.less -->
+           
+          <!-- Tasks: style can be found in dropdown.less -->
+          
+              
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">999999</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  999999
+                  <small>总监</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+	                <div class="col-sm-4 border-right">
+	                  <div class="description-block">
+	                    <h5 class="description-header">3,200</h5>
+	                    <span class="description-text">电子币</span>
+	                  </div>
+	                  <!-- /.description-block -->
+	                </div>
+	                <!-- /.col -->
+	                <div class="col-sm-4 border-right">
+	                  <div class="description-block">
+	                    <h5 class="description-header">13,000</h5>
+	                    <span class="description-text">推荐人数</span>
+	                  </div>
+	                  <!-- /.description-block -->
+	                </div>
+	                <!-- /.col -->
+	                <div class="col-sm-4 border-right">
+	                  <div class="description-block ">
+	                    <h5 class="description-header">35</h5>
+	                    <span class="description-text">奖金</span>
+	                  </div>
+	                  <!-- /.description-block -->
+	                </div>
+	                <!-- /.col -->
+	              </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="info.html" class="btn btn-default btn-flat">个人资料</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">退出</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+ 
+ 
+  <!-- Left side column. contains the logo and sidebar -->
+   <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Alexander Pierce</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> 总监</a>
+        </div>
+      </div>
+      <!-- search form -->
+ 
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+     <ul class="sidebar-menu" data-widget="tree">
+      		<li  >
+      		 <a href="index.html"> <i class="fa fa-dashboard"></i> <span>系统首页</span></a>
+      		</li>	
+        <li class=" treeview">
+          <a href="#">
+            <i class="fa fa-users"></i> <span>会员管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="zc.html"><i class="fa fa-circle-o"></i> 会员注册</a></li>
+            <li><a href="zcold.html"><i class="fa fa-circle-o"></i> 老会员</a></li>
+            <li><a href="info.html"><i class="fa fa-circle-o"></i> 个人资料维护</a></li>
+          </ul>
+        </li>
+        <li class=" treeview">
+          <a href="#">
+            <i class="fa fa-user"></i> <span>业务管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="gw.html"><i class="fa fa-circle-o"></i> 物流信息</a></li>
+            <li><a href="bmyeji.html"><i class="fa fa-circle-o"></i> 部门业绩</a></li>
+            <li><a href="jiangjin.html"><i class="fa fa-circle-o"></i> 奖金查询</a></li>
+             <li><a href="shop.html"><i class="fa fa-circle-o"></i> 微店查询</a></li>
+          </ul>
+        </li> 
+        <li class=" treeview">
+          <a href="#">
+            <i class="fa fa-credit-card"></i> <span>财务管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+          	 <li ><a href="PayOnline.html"><i class="fa fa-circle-o"></i> 在线充值</a></li>
+          	  <li ><a href="huikuan.html"><i class="fa fa-circle-o"></i> 线下汇款</a></li>
+            <li ><a href="ecaccount.html"><i class="fa fa-circle-o"></i> 电子币账户</a></li>
+            <li><a href="ctsf.html"><i class="fa fa-circle-o"></i> 电子币转账</a></li>
+            <li><a href="yjtf.html"><i class="fa fa-circle-o"></i> 佣金转电子币</a></li>
+             <li><a href="tx.html"><i class="fa fa-circle-o"></i> 提现</a></li>
+          </ul>
+        </li> 
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+         物流信息
+       
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>系统首页</a></li>
+        <li class="active">物流信息</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+      	<div class="col-md-12">
+          <div class="box box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">物流信息</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+              <table class="table table-hover">
+                <tr>
+                  <th >日期</th>
+                  <th>订单号</th>
+                  <th>所选产品</th>
+                  <th >收货人</th>
+                  <th>电话</th>
+                  <th>地址</th>
+                  <th>状态</th>
+                </tr>
+                <tr>
+                  <td>2017-10-12 15:30</td>
+                  <td><a class='light-blue' href="javascript:;" data-toggle="modal" data-target="#modal-default_1">cp222919828</a></td>
+                  <td>
+                     999-A 科技版 300套
+                  </td>
+                  <td> 刘备</td>
+                  <td>15155188525</td>
+                  <td>无锡，滨湖区，高浪东路999号 </td>
+                  <td><span class="badge bg-red">未发货</span></td>
+                </tr>
+                 <tr>
+                  <td>2017-10-12 15:30</td>
+                  <td><a class='light-blue' href="javascript:;" data-toggle="modal" data-target="#modal-default_2" href="">cp222919828</a></td>
+                  <td>
+                     999-A 科技版 300套
+                  </td>
+                  <td> 刘备</td>
+                  <td>15155188525</td>
+                  <td>无锡，滨湖区，高浪东路999号 </td>
+                  <td><span class="badge bg-green">已发货</span></td>
+                </tr>
+              </table>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              <ul class="pagination pagination-sm no-margin pull-right">
+                <li><a href="#">&laquo;</a></li>
+                <li><a class='active' href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.box -->
+
+        </div>
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+   <div class="modal fade" id="modal-default_1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><i  class='fa fa-paper-plane'></i>cp122334455 <span class="font-1 font-danger">未发货</span> </h4>
+              </div>
+              <div class="modal-body">
+                  <ul>
+                  	<li><span class='title-left'>日期：</span>2012-12-15</li>
+                  	<li><span class='title-left'>所选产品：</span>999-A 科技版 300套</li>
+                  	<li><span class='title-left'>收货人：</span>刘备</li>
+                  	<li><span class='title-left'>电话：</span>15889955</li>
+                  	<li><span class='title-left'>地址：</span>无锡，滨湖区，高浪东路999号</li>
+                  	
+                  </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <div class="modal fade" id="modal-default_2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title"><i  class='fa fa-paper-plane'></i>cp122334455 <span class="font-1 font-success">已发货</span> </h4>
+              </div>
+              <div class="modal-body">
+                  <ul>
+                  	<li><span class='title-left'>日期：</span>2012-12-15</li>
+                  	<li><span class='title-left'>所选产品：</span>999-A 科技版 300套</li>
+                  	<li><span class='title-left'>收货人：</span>刘备</li>
+                  	<li><span class='title-left'>电话：</span>15889955</li>
+                  	<li><span class='title-left'>地址：</span>无锡，滨湖区，高浪东路999号</li>
+                  	
+                  </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+    <div class="tab-pane" id="control-sidebar-home-tab">
+  </aside>
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+ 
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+</body>
+</html>

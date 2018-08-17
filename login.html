@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Log in</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+  <link rel="stylesheet" href="dist/css/login.css" />
+  
+</head>
+<body class="hold-transition login-page">
+
+<div class="login-box">
+  
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+     <div class="login-logo">
+    <img src="dist/img/logo1.png" alt="" />
+  </div>
+
+    <form action="../../index2.html" method="post" id='login_form'>
+      <div class="form-group has-feedback">
+        <input type="text" class="form-control" id='userCode' placeholder="用户名">
+        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" id='password' placeholder="密码">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+      	<div class="col-xs-8" style="padding-left: 0;">
+      		 <input id='verifyCode' type="text" class="form-control" placeholder="输入验证码">
+      	</div>
+         <div class="col-xs-4">
+         	 <a class="send" href="javascript:;" onclick="ToggleCode(this, '/generateverifycode?rnd=449014.15971138235');return false;">
+					   <img class="verify-code-canvas" src="./dist/img/generateverifycode.jpg" style='width:100%;max-width:100px'  height="35"> 
+				   </a>
+         </div>
+	       <div class="clearfix"></div>
+      </div>
+      
+      <div class="row">
+         
+        <!-- /.col -->
+        <div class="col-xs-12">
+          <button type="button" onClick='onSubmitCheck()' class="btn btn-primary btn-block btn-flat">登录</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- iCheck -->
+<script src="plugins/iCheck/icheck.min.js"></script>
+<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue',
+      increaseArea: '20%' /* optional */
+    });
+  });
+  
+	//切换验证码
+	function ToggleCode(obj, codeurl) {
+		$(obj).children("img").eq(0).attr("src",
+				codeurl + "?time=" + Math.random());
+		return false;
+	}
+	var ERROR_CONTENT='<div class="alert alert-warning">\
+										<a href="#" class="close" data-dismiss="alert">\
+											&times;\
+										</a>\
+										<div id="error">\
+											  用户名不能为空\
+										</div>\
+										</div>';
+	var t=''									
+  function show_err_msg(msg){
+  	$('.login-box').before(ERROR_CONTENT)
+  	$('#error').html(msg);
+  	$('.alert-warning').fadeIn()
+  	t=setTimeout(function(){
+  		$('.alert-warning').fadeOut();
+  		$('.alert-warning').remove()
+  	},3000)
+  }
+	function onSubmitCheck(formId) {
+		clearTimeout(t)
+		$('.alert-warning').remove()
+		var userCode = document.getElementById('userCode');
+		var password = document.getElementById('password');
+		var verifyCode = document.getElementById('verifyCode');
+		if (userCode.value == "") {
+				
+			show_err_msg("用户名不能为空");
+			return false;
+		}
+		if (password.value == "") {
+			show_err_msg("登录密码不能为空");
+			return false;
+		}
+
+		if (verifyCode.value == "") {
+			show_err_msg("验证码不能为空");
+			return false;
+		}
+		var form = document.getElementById('login_form');
+		form.submit();
+
+	}
+
+</script>
+</body>
+</html>
