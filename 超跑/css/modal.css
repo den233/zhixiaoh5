@@ -1,0 +1,47 @@
+
+ #myModal .modal-content, #myModal1 .modal-content{
+	 padding-left: 15px;
+	 padding-right: 15px;
+ }
+ 
+ #price{
+	 color: #0081C2;
+ }
+ .myModal .table-bordered{
+   display:none
+}
+#pickall span{
+	padding-right: 15px;
+}
+#pickall #allboxs{
+	 margin-top: -3px;
+}
+#tcan{
+	color:#006DCC;
+	margin-left: 15px;
+}
+#myModal,#myModal1{
+	display:none;
+}
+@media (min-width: 768px){
+	.modal-dialog {
+	    width: 600px;
+	    margin: 30px auto;
+	}
+	
+	#myModal,#myModal1,#myModal3{
+	    width: 602px;
+	    margin-left: -273px;
+		 
+   }
+}
+@media (min-width: 992px){
+	.modal-lg {
+	    width: 895px;
+	}
+	 #myModal,#myModal1,#myModal3{
+	    width: 902px;
+	    margin-left: -411px;
+		 
+   }
+}

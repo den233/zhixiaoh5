@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+ 
+    <link rel="stylesheet" href="./css/sign-up-login.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.4.6.0.css">
+    <link rel="stylesheet" href="./css/inputEffect.css">
+    <link rel="stylesheet" href="./css/verifyCode.css">
+    <link rel="stylesheet" href="./css/tooltips.css">
+    <link rel="stylesheet" href="./css/spop.min.css">
+	<link rel="stylesheet" href="./css/login.css">
+
+    <script src="./js/jquery-1.10.2.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/tooltips.js"></script>
+	<script src="./js/spop.min.js"></script>
+	<script src="js/ajax-submit.js"></script>
+    <style type="text/css">
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+
+            background-color: #00BDDC;
+
+            background: url(images/snow.jpg);
+
+            background-size: 100%;
+			 
+        }
+
+        .snow-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100001;
+        }
+    </style>
+</head>
+
+<body style="">
+
+    <div class="snow-container">
+        <canvas width="360" height="640"></canvas>
+    </div>
+
+    <div id="login">
+        <input id="tab-1" type="radio" name="tab" class="sign-in hidden" checked="">
+        <input id="tab-2" type="radio" name="tab" class="sign-up hidden">
+        <input id="tab-3" type="radio" name="tab" class="sign-out hidden">
+        <div class="wrapper">
+
+            <div class="login sign-in-htm">
+                <form class="container offset1 loginform">
+                    <div class="pad input-container">
+						<div class="login_logo"><img src="./images/logo.png"></div>
+                        <section class="content">
+                            <span class="input input--hideo">
+                                <input class="input__field input__field--hideo" value="" type="text" id="login-username" autocomplete="off" placeholder="请输入用户名"
+                                    tabindex="1" maxlength="15">
+                                <label class="input__label input__label--hideo" for="username">
+                                    <i class="fa fa-fw fa-user icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo"></span>
+                                </label>
+                            </span>
+                            <span class="input input--hideo">
+                                <input class="input__field input__field--hideo" type="password" id="password" placeholder="请输入密码" tabindex="2" maxlength="15">
+                                <label class="input__label input__label--hideo" for="password">
+                                    <i class="fa fa-fw fa-lock icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo"></span>
+                                </label>
+                            </span>
+                            <span class="input input--hideo input--verify_code">
+                                <input class="input__field input__field--hideo" type="text" id="j_captcha" autocomplete="off" placeholder="请输入验证码"
+                                    tabindex="3" maxlength="4">
+                                <label class="input__label input__label--hideo" for="login-verify-code">
+                                    <i class="fa fa-fw fa-bell-o icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo"></span>
+                                </label>
+                            </span>
+                            <a class="send" href="javascript:;" onclick="ToggleCode(this, '/tools/verify_code.ashx');return false;">
+                                <img class='verify-code-canvas' src="images/verify_code.png" width="80" height="43">
+                            </a>
+                        </section>
+                    </div>
+                    <div class="form-actions">
+                         
+                        <input id="btnSubmit"  class="btn btn-primary" type="button" tabindex="3"   value="登录" style="color:white;">
+                    </div>
+                </form>
+            </div>
+
+            <div class="login sign-out-htm">
+                <form action="http://www.jq22.com/demo/jQuerydly201804192246/#" method="post" class="container offset1 loginform">
+
+                    <div id="owl-login" class="forget-owl">
+                        <div class="hand"></div>
+                        <div class="hand hand-r"></div>
+                        <div class="arms">
+                            <div class="arm"></div>
+                            <div class="arm arm-r"></div>
+                        </div>
+                    </div>
+                    <div class="pad input-container">
+                        <section class="content">
+                            <span class="input input--hideo">
+                                <input class="input__field input__field--hideo" type="text" id="forget-username" autocomplete="off" placeholder="请输入用户名">
+                                <label class="input__label input__label--hideo" for="forget-username">
+                                    <i class="fa fa-fw fa-user icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo"></span>
+                                </label>
+                            </span>
+                            <span class="input input--hideo">
+                                <input class="input__field input__field--hideo" type="text" id="forget-code" autocomplete="off" placeholder="请输入注册码">
+                                <label class="input__label input__label--hideo" for="forget-code">
+                                    <i class="fa fa-fw fa-wifi icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo"></span>
+                                </label>
+                            </span>
+                            <span class="input input--hideo">
+                                <input class="input__field input__field--hideo" type="password" id="forget-password" placeholder="请重置密码">
+                                <label class="input__label input__label--hideo" for="forget-password">
+                                    <i class="fa fa-fw fa-lock icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo"></span>
+                                </label>
+                            </span>
+                        </section>
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn pull-left btn-link text-muted" onclick="goto_login()">返回登录</a>
+                        <input class="btn btn-primary" type="button" onclick="forget()" value="重置密码" style="color:white;">
+                    </div>
+                </form>
+            </div>
+
+            <div class="login sign-up-htm">
+                <form action="http://www.jq22.com/demo/jQuerydly201804192246/#" method="post" class="container offset1 loginform">
+
+                    <div id="owl-login" class="register-owl">
+                        <div class="hand"></div>
+                        <div class="hand hand-r"></div>
+                        <div class="arms">
+                            <div class="arm"></div>
+                            <div class="arm arm-r"></div>
+                        </div>
+                    </div>
+                    <div class="pad input-container">
+                        <section class="content">
+                            <span class="input input--hideo">
+                                <input class="input__field input__field--hideo" type="text" id="register-username" autocomplete="off" placeholder="请输入用户名"
+                                    maxlength="15">
+                                <label class="input__label input__label--hideo" for="register-username">
+                                    <i class="fa fa-fw fa-user icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo"></span>
+                                </label>
+                            </span>
+                            <span class="input input--hideo">
+                                <input class="input__field input__field--hideo" type="password" id="register-password" placeholder="请输入密码" maxlength="15">
+                                <label class="input__label input__label--hideo" for="register-password">
+                                    <i class="fa fa-fw fa-lock icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo"></span>
+                                </label>
+                            </span>
+                            <span class="input input--hideo">
+                                <input class="input__field input__field--hideo" type="password" id="register-repassword" placeholder="请确认密码" maxlength="15">
+                                <label class="input__label input__label--hideo" for="register-repassword">
+                                    <i class="fa fa-fw fa-lock icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo"></span>
+                                </label>
+                            </span>
+                            <span class="input input--hideo">
+                                <input class="input__field input__field--hideo" type="text" id="register-code" autocomplete="off" placeholder="请输入注册码">
+                                <label class="input__label input__label--hideo" for="register-code">
+                                    <i class="fa fa-fw fa-wifi icon icon--hideo"></i>
+                                    <span class="input__label-content input__label-content--hideo"></span>
+                                </label>
+                            </span>
+                        </section>
+                    </div>
+                    <div class="form-actions">
+                        <a class="btn pull-left btn-link text-muted" onclick="goto_login()">返回登录</a>
+                        <input class="btn btn-primary" type="button" onclick="register()" value="注册" style="color:white;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script  src="./js/login.js">
+</body>
+
+</html>
