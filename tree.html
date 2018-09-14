@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>直销系统 | 奖金查询</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+
+   <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="./plugins/iCheck/all.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.css">
+  <!-- Morris chart -->
+    <link rel="stylesheet" href="dist/css/bootstrap-spinner.css">
+      <!-- Theme style -->
+   <link rel="stylesheet" href="dist/css/AdminLTE.css">
+   <link rel="stylesheet" href="dist/css/theme.css" />
+   
+    <link rel="stylesheet" href="./plugins/bootstrapTable-treeView-master/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./plugins/bootstrapTable-treeView-master/assets/bootstrap-table.css">
+    <link href="./plugins/group-structure/css.css" type="text/css" rel="stylesheet" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+ 
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <img class='logo-img' src="./dist/img/logo2.png" alt="" /> 
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+           
+          <!-- Notifications: style can be found in dropdown.less -->
+           
+          <!-- Tasks: style can be found in dropdown.less -->
+          
+              
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">999999</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  999999
+                  <small>总监</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+	                <div class="col-sm-4 border-right">
+	                  <div class="description-block">
+	                    <h5 class="description-header">3,200</h5>
+	                    <span class="description-text">电子币</span>
+	                  </div>
+	                  <!-- /.description-block -->
+	                </div>
+	                <!-- /.col -->
+	                <div class="col-sm-4 border-right">
+	                  <div class="description-block">
+	                    <h5 class="description-header">13,000</h5>
+	                    <span class="description-text">推荐人数</span>
+	                  </div>
+	                  <!-- /.description-block -->
+	                </div>
+	                <!-- /.col -->
+	                <div class="col-sm-4 border-right">
+	                  <div class="description-block ">
+	                    <h5 class="description-header">35</h5>
+	                    <span class="description-text">奖金</span>
+	                  </div>
+	                  <!-- /.description-block -->
+	                </div>
+	                <!-- /.col -->
+	              </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="info.html" class="btn btn-default btn-flat">个人资料</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">退出</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+ 
+ <!-- Left side column. contains the logo and sidebar -->
+   <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Alexander Pierce</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+      <!-- search form -->
+ 
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+     <ul class="sidebar-menu" data-widget="tree">
+      		<li  >
+      		 <a href="index.html"> <i class="fa fa-dashboard"></i> <span>系统首页</span></a>
+      		</li>	
+        <li class=" treeview">
+          <a href="#">
+            <i class="fa fa-users"></i> <span>会员管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="zc.html"><i class="fa fa-circle-o"></i> 会员注册</a></li>
+            <li><a href="zcold.html"><i class="fa fa-circle-o"></i> 老会员</a></li>
+            <li><a href="info.html"><i class="fa fa-circle-o"></i> 个人资料维护</a></li>
+          </ul>
+        </li>
+        <li class=" treeview">
+          <a href="#">
+            <i class="fa fa-user"></i> <span>业务管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="gw.html"><i class="fa fa-circle-o"></i> 物流信息</a></li>
+            <li><a href="bmyeji.html"><i class="fa fa-circle-o"></i> 部门业绩</a></li>
+            <li><a href="jiangjin.html"><i class="fa fa-circle-o"></i> 奖金查询</a></li>
+             <li><a href="shop.html"><i class="fa fa-circle-o"></i> 微店查询</a></li>
+          </ul>
+        </li> 
+        <li class=" treeview">
+          <a href="#">
+            <i class="fa fa-credit-card"></i> <span>财务管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+          	 <li ><a href="PayOnline.html"><i class="fa fa-circle-o"></i> 在线充值</a></li>
+          	  <li ><a href="huikuan.html"><i class="fa fa-circle-o"></i> 线下汇款</a></li>
+            <li ><a href="ecaccount.html"><i class="fa fa-circle-o"></i> 电子币账户</a></li>
+            <li><a href="ctsf.html"><i class="fa fa-circle-o"></i> 电子币转账</a></li>
+            <li><a href="yjtf.html"><i class="fa fa-circle-o"></i> 佣金转电子币</a></li>
+             <li><a href="tx.html"><i class="fa fa-circle-o"></i> 提现</a></li>
+          </ul>
+        </li> 
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+         奖金查询
+       
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i>系统首页</a></li>
+        <li class="active">奖金查询</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+      	<div class="col-md-12">
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">奖金明细</h3>
+            </div>
+            <!-- /.box-header -->
+           
+            
+            <div class="box-body table-responsive no-padding">
+            	
+               <div style="margin:20px">
+					        <input type="button" id="expandAllTree" value="展开所有"  class="btn btn-primary"/>
+					        <input type="button" id="collapseAllTree" value="折叠所有" class="btn btn-defaul"/>
+					         <input type="button" id="orgTree" value="组织结构" class="btn btn-defaul"/>
+					        <table class='table table-hover' id="tree_table"></table>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              <ul class="pagination pagination-sm no-margin pull-right">
+                <li><a href="#">&laquo;</a></li>
+                <li><a class='active' href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.box -->
+
+        </div>
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+    
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+    <div class="tab-pane" id="control-sidebar-home-tab">
+  </aside>
+  <div class="control-sidebar-bg"></div>
+</div>
+    <style>
+    	.modal{
+    		padding-left: 0;width:100%;left:0;top:0;margin-left:0;height:100%;background: #fff;padding-left: 0!important;
+    	}
+    </style>
+     <div style=' ' class="modal fade" id="example_modal">
+          <div class="modal-dialog"  style="width:100%;height:100%;margin:0; ;">
+            <div class="modal-content"  style="width:100%;height:100%;margin:0;">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">组织结构</h4>
+              </div>
+                <div style='height: calc(100% - 134px);overflow: auto;' class="modal-body">
+				      	 <div class="strt-wrap" id="strtWrap">
+								 </div>
+				 
+				      </div>
+      
+              <div class="modal-footer">
+				        <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>                 
+				      </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+ 
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+ <script src="./plugins/bootstrapTable-treeView-master/assets/bootstrap-table.js"></script>
+ <script src="./plugins/bootstrapTable-treeView-master/src/bootstraptable-treeview.js"></script>
+ <script src="./plugins/group-structure/jquery.ui.draggable.min.js" type="text/javascript"></script>
+ <script>
+     
+    	
+        $(function () {
+        	  
+            var data = [
+               {
+                    id: '0',
+                    name: "龙哥",
+                    desc: "这是一个描述",
+                    parentId:null,
+               },
+                {
+                    id: '1',
+                    name: "aa",
+                    desc: "这是一个描述",
+                    parentId:'0',
+                },{
+                    id: '11',
+                    name: "aa_sub1",
+                    desc: "这是一个描述_sub1",
+                    parentId:'1',
+                },{
+                    id: '111',
+                    name: "3",
+                    desc: "3" ,
+                    parentId:'11',
+                },
+                {
+                    id: '112',
+                    name: "4",
+                    desc: "4",
+                    parentId:'11',
+                },
+                {
+                    id: '113',
+                    name: "5",
+                    desc: "5",
+                    parentId:'11',
+                },
+                {
+                    id: '2',
+                    name: "bb",
+                    desc: "这是一个描述",
+                    parentId:'0',
+                },
+                {
+                    id: '22',
+                    name: "bb_sub1",
+                    desc: "这是一个描述_sub1",
+                    parentId:'2',
+                },{
+                    id: '23',
+                    name: "bb_sub2",
+                    desc: "这是一个描述_sub2",
+                    parentId:'2',
+                },{
+                    id: '233',
+                    name: "bb_sub2_sub2",
+                    desc: "这是一个描述_sub2_sub2",
+                    parentId:'23',
+                },{
+                    id: '2333',
+                    name: "bb_sub2_sub2_sub2",
+                    desc: "这是一个描述_sub2_sub2_sub2",
+                    parentId:'233',
+                },{
+                    id: '23333',
+                    name: "bb_sub2_sub2_sub23",
+                    desc: "这是一个描述_sub2_sub2_sub2",
+                    parentId:'233',
+                },{
+                    id: '233333',
+                    name: "bb_sub2_sub2_sub233",
+                    desc: "这是一个描述_sub2_sub2_sub2",
+                    parentId:'233',
+                },{
+                    id: '24',
+                    name: "bb_sub3",
+                    desc: "这是一个描述_sub3",
+                    parentId:'2',
+                },
+            ]
+      
+           
+            
+            //$("body").append(menus);
+        move()
+        var menus=''
+				function getRoot(id,array,name){
+					   menus = "";
+						menus+='<div class="strt-block"><div class="strt-part"><span class="strt-name" id="root">'+name+'</span><div class="line-v"><span></span></div>';
+						GetData(id,array)
+						menus+='</div>'
+						 	$('#strtWrap').html(menus);
+        	  $('#example_modal').modal({backdrop: 'static', keyboard: false}).on('shown.bs.modal', function () {
+               
+              
+                
+              }).on('hidden.bs.modal', function () {
+							  $('#strtWrap').html('')
+							     
+							})
+				}
+				
+        function GetData(id,array) {
+          var childArray = GetParentData(id,array);
+           var arrayIndex=0;
+          if(childArray.length > 0){ //如果有值，采用递归得到他的子元素
+          	 menus+='<div class="strt-block">';
+          	 for(var i in childArray) {
+							 var array1=GetParentData(childArray[i].id,array);
+							 var childArray1 = GetParentData(childArray[i].id,array);
+							  
+          	 	  if(childArray.length==1){
+          	 	  	     menus += '<div class="strt-part">'
+											+'<span class=""></span>'
+											+'<span class="strt-name">'+childArray[i].name+'</span>'
+										   menus+=array1.length>0?'<div class="line-v"><span></span></div>':'';
+											 if(array1.length>0){
+												 GetData(childArray[i].id,array);
+
+											 }
+											
+											 menus+='</div>'
+          	 	      	
+          	 	   }
+								 //只有左右的情况
+          	 	  else if(childArray.length==2){
+									//左
+          	 	   	   if(arrayIndex==0){
+	          	 	   	   menus += '<div class="strt-part">'
+												+'<span class="line-h line-h-r"></span>'
+												+'<div class="line-v"><span></span></div>'
+												+'<span class="strt-name">'+childArray[i].name+'</span>'
+											  menus+=array1.length>0?'<div class="line-v"><span></span></div>':'';
+												  if(array1.length>0){
+		 												 GetData(childArray[i].id,array);
+		 
+		 											 }
+												 menus+='</div>'
+          	 	      }
+										//右
+          	 	   	   else{
+          	 	   	   		console.log('右',childArray[i].name)
+          	 	   	   	  menus += '<div class="strt-part">'
+												+'<span class="line-h line-h-l"></span>'
+												+'<div class="line-v"><span></span></div>'
+												+'<span class="strt-name">'+childArray[i].name+'</span>'
+											   menus+=array1.length>0?'<div class="line-v"><span></span></div>':'';
+													 if(array1.length>0){
+															 GetData(childArray[i].id,array);
+			
+														 }
+													menus+='</div>'
+          	 	   	   }
+          	 	   	   
+          	 	   }
+          	 	   else{
+          	 	   	 
+									 //左
+          	 	   	  if(arrayIndex==0){
+	          	 	   	   menus += '<div class="strt-part">'
+												+'<span class="line-h line-h-r"></span>'
+												+'<div class="line-v"><span></span></div>'
+												+'<span class="strt-name">'+childArray[i].name+'</span>'
+											  menus+=array1.length>0?'<div class="line-v"><span></span></div>':'';
+
+												 if(array1.length>0){
+														 GetData(childArray[i].id,array);
+		
+													 }
+												 menus+='</div>'
+          	 	      }
+										//右
+          	 	   	  else if( arrayIndex==childArray.length-1){
+											//console.log(childArray[i].name)
+											  
+          	 	   	  	  menus += '<div class="strt-part">'
+												+'<span class="line-h line-h-l"></span>'
+												+'<div class="line-v"><span></span></div>'
+												+'<span class="strt-name">'+childArray[i].name+'</span>'
+											  menus+=array1.length>0?'<div class="line-v"><span></span></div>':'';
+                         if(array1.length>0){
+														 GetData(childArray[i].id,array);
+		
+													 }
+													menus+='</div>'
+											   	 
+          	 	   	  }
+										//中
+          	 	   	   else{
+          	 	   	   	console.log(childArray[i].name)
+          	 	   	   	    menus += '<div class="strt-part">'
+												+'<span class="line-h line-h-c"></span>'
+												+'<div class="line-v"><span></span></div>'
+												+'<span class="strt-name">'+childArray[i].name+'</span>'
+											  menus+=array1.length>0?'<div class="line-v"><span></span></div>':'';
+
+													if(array1.length>0){
+															GetData(childArray[i].id,array);
+			
+														}
+													menus+='</div>'
+											   	
+          	 	   	   }
+          	 	   	  
+          	 	   }
+          	 	   arrayIndex++ 
+          	 	    
+	            }
+	             menus += '</div>';     
+          }
+            
+         
+					//console.log(menus)
+        }
+ 
+        function GetParentData(id,array) {
+          var newArray = [];
+          for(var i in array) {
+          	 
+            if(array[i].parentId == id)
+              newArray.push(array[i]);
+          }
+          return newArray;
+        }
+        function move(){
+        	var strtBlocks=$("div.strt-block");
+					strtBlocks.each(function(n){
+						var childs=$(this).children();
+						var w=(childs.last().width() - childs.first().width())/4;
+						if(w>0){
+							$(this).css("margin-left",w)
+						}else{
+							$(this).css("padding-right",-w*2);
+						}
+					});
+					
+					var strtWrap=$("#strtWrap");
+					strtWrap.width(strtWrap.children().width());
+					console.log(strtWrap.children().width())
+					strtWrap.draggable({
+						cursor:"move",
+						opacity:0.5
+					});
+       }
+ 
+       
+            $('#tree_table').bootstrapTable({
+                class: 'table table-hover table-bordered',
+               // url:'plugin/bootstrapTable-treeView-master/data.json',
+                contentType: 'application/x-www-form-urlencoded; charset=utf-8',
+                data: data,
+                sidePagination: 'server',
+                pagination: false,
+                hideColumn:0,
+                treeView: true,
+                treeId: "id",
+                treeField: "name",
+                rowAttributes: function (row, index) {
+                    return {
+                        xx:index
+                    };
+                },
+                onClickRow:function(row,index){
+                	//console.log(row)
+								 
+								  
+									getRoot(row.id,data,row.name);
+								 
+                
+  
+                },
+                queryParams : function(params) {
+									var param = {
+										roleId : 'xx'
+									};
+									return param;
+								},
+                columns: [ {
+                    field: 'name',
+                    title: '名称',
+                },
+                {
+                    field: 'desc',
+                    title: '详情',
+                },
+                ]
+            });
+            $("#expandAllTree").on('click',function(){
+                $('#tree_table').bootstrapTable("expandAllTree")
+            })
+            $("#collapseAllTree").on('click',function(){
+                $('#tree_table').bootstrapTable("collapseAllTree")
+            })
+            $('#orgTree').on('click',function(){
+            	   
+            	   getRoot(0,data,data[0].name)
+            })
+        });
+    </script>
+</body>
+</html>
